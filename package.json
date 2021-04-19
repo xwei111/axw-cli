@@ -1,0 +1,35 @@
+{
+  "name": "axw-cli",
+  "version": "1.0.3",
+  "description": "pug转template、快速生成模板",
+  "main": "./bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version --release-as",
+    "release:100": "npm run release -- major",
+    "release:010": "npm run release -- minor",
+    "release:001": "npm run release -- patch"
+  },
+  "author": "xw",
+  "license": "ISC",
+  "bin": {
+    "axw": "./bin/index.js"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^7.2.0",
+    "download-git-repo": "^3.0.2",
+    "figlet": "^1.5.0",
+    "inquirer": "^8.0.0",
+    "ora": "^5.4.0",
+    "pug": "^3.0.2",
+    "rimraf": "^3.0.2"
+  },
+  "files": [
+    "bin",
+    "templates"
+  ],
+  "devDependencies": {
+    "standard-version": "^9.2.0"
+  }
+}
